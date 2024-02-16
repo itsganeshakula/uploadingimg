@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Upload App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Photo Upload App</h1>
+    
+    <!-- File upload form -->
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="photo" id="photoInput" accept="image/*" required>
+        <button type="button" onclick="uploadPhoto()">Upload Photo</button>
+    </form>
+
+    <!-- Display uploaded photos -->
+    <div id="photoGallery">
+        <% photos.forEach(photo => { %>
+            <img src="<%= photo.imageUrl %>" alt="<%= photo.name %>">
+        <% }); %>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

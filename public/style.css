@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#uploadForm {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#photoGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+}
